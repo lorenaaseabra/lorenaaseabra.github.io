@@ -1,0 +1,50 @@
+        .background-color {
+            height: 500px;
+            width: 100%;
+            /*background-color: pink*/
+            ;
+            background-image: url('/assets/bacgroundpage/bg-html.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .bd-toc-collapse {
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            overflow-y: auto;
+            right: 0;
+            margin-right: 15px;
+        }
+        
+        .bd-toc-collapse ul,
+        .bd-toc-collapse li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bd-toc-collapse a {
+            text-decoration: none;
+            color: #666;
+            display: block;
+            padding: 8px;
+        }
+        
+        .bd-toc-collapse a:hover {
+            background-color: #eee;
+        }
+        
+        .bd-toc-collapse ul ul {
+            margin-left: 20px;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+        }

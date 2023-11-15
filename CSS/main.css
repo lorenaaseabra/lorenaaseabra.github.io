@@ -1,0 +1,53 @@
+    html,
+    body {
+        background-color: black;
+        padding: 0;
+    }
+    
+    main {
+        background-color: black;
+        font-family: 'roboto', sans-serif;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 225px;
+        padding-right: 225px;
+        padding-top: 50px;
+        /* Include padding in the total width */
+    }
+    /* main h2,
+    h3,
+    h4 {
+        color: #7149C6;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    } */
+    
+    main {
+        color: white;
+        line-height: 1.6;
+    }
+    
+    main p span {
+        color: #A6FF00;
+    }
+    
+    main ul.menu {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    main ol {
+        counter-reset: li;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+    
+    main ol li {
+        counter-increment: li;
+        margin-bottom: 10px;
+    }
+    
+    main strong {
+        color: #A6FF00;
+    }

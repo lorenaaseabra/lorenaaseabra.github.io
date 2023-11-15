@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/html.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link href="assets/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Html</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar --bs-body-bg-rgb bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="main.html">DevDoodleHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Html</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CSS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Others
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#">React</a></li>
+                                <li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Angular</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Owner info</a></li>
+                            </ul>
+                            </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="background-color"></div>
+
+    </header>
+
+    <main class="main">
+        <div class="collapse bd-toc-collapse" id="tocContents">
+            <nav id="tableOfContent">
+                <p>On this page</p>
+                <ul>
+                    <li>
+                        <a href="#introduction" id>Welcome
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#basic" id>Html Basics
+                        </a>
+                        <ul>
+
+                            <li>
+                                <a href="#img" id>Image</a>
+                            </li>
+                            <li>
+                                <a href="#font" id>Font Size</a>
+                            </li>
+                            <li>
+                                <a href="#paragraphs" id>Paragraphs Size</a>
+                            </li>
+                            <li>
+                                <a href="#links" id>Link</a>
+                            </li>
+                            <li>
+                                <a href="#list" id>Lists</a>
+                                <ul>
+                                    <li>
+                                        <a href="#unorded-list" id>Unorded List</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ordered-list" id>Ordered List</a>
+                                    </li>
+                                    <li>
+                                        <a href="#unstyled-list" id>Unstyled List</a>
+                                    </li>
+                                    <li>
+                                        <a href="#inline-list" id>Inline List</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#format" id>Formatting</a>
+                    </li>
+                    <li>
+                        <a href="#exib" id>Exibition</a>
+                        <ul>
+
+                            <li>
+                                <a href="#blockquote" id>Blockquote</a>
+                            </li>
+                            <li>
+                                <a href="#code" id>Code</a>
+                            </li>
+                            <li>
+                                <a href="#sup" id>Superscript and Subscript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#semantic">Semantic elements</a>
+                    </li>
+                    <li>
+                        <a href="#table">Tables</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+
+        <section id="introduction">
+            <h2>Welcome to HTML!</h2>
+            <p>HTML <span>(HyperText Markup Language) </span>is the standard language for creating and designing web pages. It provides the basic structure for organizing content on the web.</p>
+
+        </section>
+        <br>
+        <br>
+
+        <section id="tag_geral">
+
+            <h4 id="basic">Html Basics</h4>
+            <hr>
+            <br>
+
+
+            <h5 id="img">Use of image</h5>
+            <hr>
+            <p>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML document. It is a self-closing tag and requires the src attribute to specify the image file path and <span>the alt attribute to provide alternative text for accessibility</span>.</p>
+            <img src="assets/Imagem_do_WhatsApp_de_2023-11-15_à_s__01.33.36_dbc7c89c-removebg-preview.png" alt="Description of the image" width="300">
+            <br>
+            <br>
+            <br>
+
+
+            <h5 id="font">Font sizes</h5>
+            <hr>
+            <p>In HTML, the <code>&lt;h&gt;</code> tags, or header tags, are used to define headings on a webpage. These tags range from
+                <code>&lt;h1&gt;</code>for the main heading to <code>&lt;h6&gt;</code>for subheadings,<span> with
+                    <code>&lt;h1&gt;</code> being the largest and <code>&lt;h6&gt;</code> the smallest.</span> </p>
+
+            <table class=" table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Example</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><code>&lt;h1&gt;</code><code>&lt;/h1&gt;</code></th>
+                        <td>
+                            <h1 class="display-1">Display 1</h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>&lt;h2&gt;</code><code>&lt;/h2&gt;</code></th>
+                        <td>
+                            <h1 class="display-2">Display 2</h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>&lt;h3&gt;</code><code>&lt;/h3&gt;</code></th>
+                        <td>
+                            <h1 class="display-3">Display 3</h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>&lt;h4&gt;</code><code>&lt;/h4&gt;</code></th>
+                        <td>
+                            <h1 class="display-4">Display 4</h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>&lt;h5&gt;</code><code>&lt;/h5&gt;</code></th>
+                        <td>
+                            <h1 class="display-5">Display 5</h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>&lt;h6&gt;</code><code>&lt;/h6&gt;</code></th>
+                        <td>
+                            <h1 class="display-6">Display 6</h1>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <br>
+            <br>
+
+            <h5 id="paragraphs">Paragraphs</h5>
+            <hr>
+            <p>The
+                <code>&lt;p&gt;</code>tag is used to define paragraphs in HTML. It is a block-level element that separates text into distinct blocks. It's commonly used to structure and organize textual content.</p>
+
+            <p>This is a regular paragraph in HTML.</p>
+            <br>
+            <br>
+
+            <h5 id="links">Links</h5>
+            <hr>
+            <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks, allowing users to navigate to other web pages. <span> It requires the href attribute to specify the destination URL </span>. You can use the target="_blank" attribute to open the
+                link in a new tab.
+            </p>
+
+            <a href="https://www.w3schools.com/html/" target="_blank">Want to learn more? Click here for further information!</a>
+            <br>
+            <br>
+            <br>
+            <h5 id="list">Lists</h5>
+            <hr>
+
+            <h5 id="unorded-list">Unorded list</h5>
+            The
+            <code>&lt;ul&gt;</code>(Unordered List) tag is used to create a list of items without any specific order. Each item in the list is defined by the <code>&lt;li&gt;</code> (List Item) tag. By default, unordered lists display with bullets preceding
+            each item.
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <br>
+
+            <h5 id="ordered-list">Ordered list</h5>
+            <p>The
+                <code>&lt;ol&gt;</code>(Ordered List) tag is used to create a list of items with a specific <span> numerical or alphabetical order</span>. Similar to the unordered list, each item is defined by the <code>&lt;li&gt;</code> tag. Ordered
+                lists display with numbers or letters by default. </p>
+
+            <ol>
+                <li> First item</li>
+                <li> Second item</li>
+                <li> Third item</li>
+            </ol>
+            <br>
+
+            <h5 id="unstyled-list">Unstyled list</h5>
+            <p>An unstyled list refers to a list that has its default styles removed. This is often achieved by applying custom styles or classes to <code>&lt;ul&gt;</code> or
+                <code>&lt;ol&gt;</code> elements, altering their appearance. It's a way to create a list <span>without the typical bullets or numbers associated with traditional lists</span>.</p>
+            <ul class="list-unstyled">
+                <br>
+                <li>This is a list.</li>
+                <li>It appears completely unstyled.</li>
+                <li>Structurally, it's still a list.</li>
+                <li>However, this style only applies to immediate child elements.</li>
+                <li>Nested lists:
+                    <ul>
+                        <li>are unaffected by this style</li>
+                        <li>will still show a bullet</li>
+                        <li>and have appropriate left margin</li>
+                    </ul>
+                </li>
+                <li>This may still come in handy in some situations.</li>
+            </ul>
+            <br>
+
+            <h5 id="inline-list">Inline List</h5>
+            <p>An inline list is a list where the list items (
+                <code>&lt;li&gt;</code>) are displayed horizontally instead of vertically. This is achieved by using CSS to set the display property of list items to inline or inline-block.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">This is a list item.</li>
+                <li class="list-inline-item">And another one.</li>
+                <li class="list-inline-item">But they're displayed inline.</li>
+            </ul>
+            <br>
+            <br>
+
+        </section>
+
+        <!-- Section tag_format (the HTML code you provided) -->
+        <section id="tag_format">
+            <h4 id="format">Formatting</h4>
+            <hr>
+            <br>
+            <p><code>&lt;mark&gt;</code>:You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><code>&lt;del&gt;</code>:<del>This line of text is meant to be treated as deleted text.</del></p>
+            <p><code>&lt;s&gt;</code>:<s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><code>&lt;ins&gt;</code>:<ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            <p><code>&lt;u&gt;</code>:<u>This line of text will render as underlined.</u>
+            </p>
+            <p><code>&lt;small&gt;</code>:<small>This line of text is meant to be treated as fine print.</small></p>
+            <p><code>&lt;strong&gt;</code>:<strong>This line rendered as bold text.</strong></p>
+            <p><code>&lt;em&gt;</code>:<em>This line rendered as italicized text.</em></p>
+            <p><code>&lt;code&gt;:This line will look like a code line.</code></p>
+            <br>
+            <p><em>Beware that those tags should be used for semantic purposes:</em></p>
+
+            <ul>
+                <li><code>&lt;mark&gt;</code> represents text which is marked or highlighted for reference or notation purposes.</li>
+                <li><code>&lt;small&gt;</code> represents side-comments and small print, like copyright and legal text.</li>
+                <li><code>&lt;s&gt;</code> represents elements that are no longer relevant or no longer accurate.</li>
+                <li><code>&lt;u&gt;</code> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.</li>
+            </ul>
+
+            <br>
+            <p><em>If you want to style your text, you should use the following classes instead:</em></p>
+
+            <ul>
+                <li><code>.mark</code> will apply the same styles as <code>&lt;mark&gt;</code>.</li>
+                <li><code>.small</code> will apply the same styles as <code>&lt;small&gt;</code>.</li>
+                <li><code>.text-decoration-underline</code> will apply the same styles as <code>&lt;u&gt;</code>.</li>
+                <li><code>.text-decoration-line-through</code> will apply the same styles as <code>&lt;s&gt;</code>.</li>
+            </ul>
+            <br>
+            <br>
+
+        </section>
+        <section id="tag-exib">
+            <h4 id="exib">Exibition</h4>
+            <hr>
+            <br>
+            <h5 id="blockquote">Blockquote</h5>
+            <hr>
+            <p>The
+                <code>&lt;blockquote&gt;</code> element in HTML is used to represent
+                <span>a block of text that has been "quoted" from another source</span>. It is commonly employed to indicate that the enclosed text is a citation, extract, or excerpt from a different document or source. When a browser renders text within
+                a <code>&lt;blockquote&gt;</code> tag, it often adds indentation or other styles to visually distinguish the quoted content.</p>
+            <figure>
+                <blockquote class="blockquote">
+                    <p><em>"A well-known quote, contained in a blockquote element."</em></p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p><em>"A well-known quote, contained in a blockquote element."</em></p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+            <figure class="text-end">
+                <blockquote class="blockquote">
+                    <p><em>"A well-known quote, contained in a blockquote element."</em></p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+            <br>
+            <h5 id="code">Code</h5>
+            <hr>
+            <p>The <code>&lt;pre&gt;</code> (preformatted) and <code>&lt;code&gt;</code>(code) elements in HTML are often used together to define a block of preformatted text, such as computer code. The <code>&lt;pre&gt;</code> element preserves both spaces
+                and line breaks within the content, maintaining the original formatting. When used in conjunction with <code>&lt;code&gt;</code>, it signifies that the enclosed text is a piece of code.</p>
+            <pre>
+                <code>
+                    // This is a code block
+                    function greet(name) {
+                        return "Hello, " + name + "!";
+                    }
+                    console.log(greet("World"));
+                </code>
+            </pre>
+            <br>
+            <br>
+            <h5 id="sup">Superscript and Subscript</h5>
+            <hr>
+            <p>The <code>&lt;sup&gt;</code> (superscript) and <code>&lt;sub&gt;</code> (subscript) elements in HTML serve to position text either above or below the baseline, respectively. Superscript is often used for notations, footnotes, or mathematical
+                exponents, while subscript is commonly employed for chemical formulas or mathematical subscripts. The <code>&lt;sup&gt;</code> tag elevates the enclosed text, creating a smaller, raised appearance, while the <code>&lt;sub&gt;</code> tag
+                lowers the text, producing a smaller, lowered appearance.</p>
+
+
+            <h6><em>Superscript</em>
+            </h6>
+            <p>The Planck constant (<code>h</code>) is approximately 6.62607015 × 10<sup>-34</sup> m<sup>2</sup> kg / s.</p>
+            <br>
+            <h6><em>Subscript</em>
+                <p>Water (H<sub>2</sub>O) consists of two hydrogen atoms and one oxygen atom.</p>
+
+
+        </section>
+
+        <br>
+        <br>
+        <section id="elementos_semanticos">
+            <h4 id="semantic"> Semantic Elements</h4>
+            <hr>
+            <br>
+            <p>Semantic element are elements with some meaning.</p>
+            <p>Semantic elements <span>increase accessibility, improve code structure and make code more readable</span> for both humans and machines.</p>
+            <p><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are semantic HTML elements that provide meaning and structure to
+                webpage content. They enhance clarity, accessibility, and SEO by accurately representing the content hierarchy. Using these elements improves the overall understanding and inclusivity of web documents.
+            </p>
+            <div class="text-center">
+                <img src="assets/Imagem_do_WhatsApp_de_2023-11-15_à_s__02.05.30_d03dd030-removebg-preview.png" class="rounded" alt="..." width="750">
+            </div>
+            <br>
+            <table class="table table-dark table-hover">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;header&gt;</code></td>
+                    <td>The <code>&lt;header&gt;</code> element is used to represent the header of a section or a website. It typically contains logos, titles, and navigation elements.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;nav&gt;</code></td>
+                    <td>The <code>&lt;nav&gt;</code> element is used to define the navigation section of a document, providing links to other pages or different sections of the same page.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;section&gt;</code></td>
+                    <td>The <code>&lt;section&gt;</code> element is used to divide the content of an HTML document into thematic sections or groups of related content.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;aside&gt;</code></td>
+                    <td>The <code>&lt;aside&gt;</code> element is intended to contain information that is related to the main content, such as sidebars, ads, or additional navigation elements.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;main&gt;</code></td>
+                    <td>The <code>&lt;main&gt;</code> element represents the main content of an HTML document. It should only contain content directly related to the central content of the page.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;article&gt;</code></td>
+                    <td>The <code>&lt;article&gt;</code> element is used to represent independent and standalone content, such as a blog post, a newspaper article, or a comment.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;footer&gt;</code></td>
+                    <td>The <code>&lt;footer&gt;</code> element is used to represent the footer of a section or a website. It usually contains copyright information, contact details, additional links, and other similar data.</td>
+                </tr>
+
+            </table>
+            <br>
+            <br>
+        </section>
+
+        <section id="tabel">
+            <h4>Tables</h4>
+            <hr>
+            <br>
+
+            <p><code>&lt;table&gt;</code> is an essential element in HTML for organizing and presenting data in a structured manner on web pages. The <code>&lt;table&gt;</code> tag is used to create a table and can be complemented by various elements to
+                define different aspects of the table's structure. The <code>&lt;thead&gt;</code> element is employed for the header section, typically containing column labels, while the <code>&lt;tbody&gt;</code> element represents the main body of
+                the table where data is displayed. Each row in the table is defined by the <code>&lt;tr&gt;</code> tag, and within a row, <code>&lt;th&gt;</code> is used for header cells, and <code>&lt;td&gt;</code> is used for regular data cells. Additionally,
+                the <code>&lt;caption&gt;</code> tag allows for the inclusion of a descriptive title for the table. Understanding these HTML table elements is crucial for web developers when designing and structuring information in a clear and organized
+                way.
+            </p>
+            <br>
+            <div class="text-center">
+                <img src="assets/table.jpg" class="rounded" alt="..." width="750">
+            </div>
+            <br>
+
+
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td><code>&lt;thead&gt;</code></td>
+                        <td>Defines the header section of the table. Typically contains column labels.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tbody&gt;</code></td>
+                        <td>Defines the main section of the table body where data is displayed.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Defines a row in the table.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;th&gt;</code></td>
+                        <td>Defines header cells in the table.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Defines regular cells in the table.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Defines the start of the table.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;caption&gt;</code></td>
+                        <td>Provides a descriptive title for the table.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Section formulario (the HTML code you provided) -->
+        <section id="formulario">
+            <!-- ... (the rest of your code) ... -->
+        </section>
+
+    </main>
+
+</body>
+
+</html>

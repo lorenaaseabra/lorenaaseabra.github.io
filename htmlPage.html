@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Html</title>
+    <title>DevDoodleHub | Html</title>
 </head>
 
 <body>
@@ -469,7 +469,7 @@
             <br>
         </section>
 
-        <section id="tabel">
+        <section id="table">
             <h4>Tables</h4>
             <hr>
             <br>
@@ -531,7 +531,226 @@
 
         <!-- Section formulario (the HTML code you provided) -->
         <section id="formulario">
-            <!-- ... (the rest of your code) ... -->
+            <h2>Forms</h2>
+            <hr>
+            <br>
+            <br>
+
+            <!-- Input de Texto -->
+            <div>
+                <h4>Text Input</h4>
+                <hr>
+                <p>A simple text box for user input.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="text"&gt;Name:&lt;/label&gt;</code><br>
+                <code>&lt;input type="text" id="text" name="name" placeholder="Enter your name"&gt;</code>
+                <br>
+                <label for="texto">Informe seu nome:</label>
+                <input type="text" id="texto" name="nome" placeholder="Digite seu nome">
+            </div>
+
+            <!-- Senha -->
+            <div>
+                <br>
+                <h4>Password</h4>
+                <hr>
+                <p>A text box where typed characters are masked for password input.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="password"&gt;Password:&lt;/label&gt;</code><br>
+                <code>&lt;input type="password" id="password" name="password" &gt;</code>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <br>
+                <h4>Email</h4>
+                <hr>
+                <p>Used for entering an email address.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code><br>
+                <code> &lt;input type="email" id="email" name="email"&gt;</code>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <!-- Data -->
+            <div>
+                <br>
+                <h4>Date</h4>
+                <hr>
+                <p>Provides a field for selecting a date.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="date"&gt;Date:&lt;/label&gt;</code><br>
+                <code>&lt;input type="date" id="date" name="date"&gt;</code>
+                <br>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <!-- Hora -->
+            <div>
+                <br>
+                <h4>Time</h4>
+                <hr>
+                <p>Allows the insertion of a time.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="time"&gt;Time:&lt;/label&gt;</code><br>
+                <code>&lt;input type="time" id="time" name="time"&gt;</code>
+                <br>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+
+            <!-- Número -->
+            <div>
+                <br>
+                <h4>Number</h4>
+                <hr>
+                <p>Used for entering a numeric value.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="number"&gt;Number:&lt;/label&gt;</code><br>
+                <code>&lt;input type="number" id="number" name="number"&gt;</code>
+                <br>
+                <label for="qualquer">Número:</label>
+                <input type="number" id="qualquer" name="qualquer">
+            </div>
+
+            <!-- Arquivo -->
+            <div>
+                <br>
+                <h4>File</h4>
+                <hr>
+                <p>Allows the user to upload files.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="file"&gt;File:&lt;/label&gt;</code><br>
+                <code>&lt;input type="file" id="file" name="file"&gt;</code>
+                <br>
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+
+            <!-- Link -->
+            <div>
+                <br>
+                <h4>URL</h4>
+                <hr>
+                <p>Used for entering a URL.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="url"&gt;URL:&lt;/label&gt;</code><br>
+                <code>&lt;input type="url" id="url" name="url"&gt;</code>
+                <br>
+                <label for="link">Link:</label>
+                <input type="url" id="link" name="link">
+            </div>
+
+            <!-- Cor -->
+            <div>
+                <br>
+                <h4>Color</h4>
+                <hr>
+                <p>Provides a color picker.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="color"&gt;Color:&lt;/label&gt;</code><br>
+                <code>&lt;input type="color" id="color" name="color"&gt;</code>
+                <br>
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+
+            <!-- Range -->
+            <div>
+                <br>
+                <h4>Range</h4>
+                <hr>
+                <p>Offers a slider to select a value from a range.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="range"&gt;Range:&lt;/label&gt;</code><br>
+                <code>&lt;input type="range" id="range" name="range"&gt;</code>
+                <br>
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range">
+            </div>
+
+            <!-- Checkbox -->
+            <div>
+                <br>
+                <h4>Checkbox</h4>
+                <hr>
+                <p>A checkbox for selecting options.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="checkbox"&gt;Check:&lt;/label&gt;</code><br>
+                <code>&lt;input type="checkbox" id="checkbox" name="checkbox"&gt;</code>
+                <br>
+                <label for="check">Marcar:</label>
+                <input type="checkbox" id="check" name="check">
+            </div>
+
+            <!-- Radio -->
+            <div>
+                <br>
+                <h4>Radio Buttons</h4>
+                <hr>
+                <p>Provides a list of options where only one can be selected.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="radio"&gt;Select:&lt;/label&gt;</code><br>
+                <code>&lt;input type="radio" id="radio" name="radio"&gt;</code>
+                <br>
+                <label for="radio">Selecionar:</label>
+                <input type="radio" id="radio" name="radio">
+            </div>
+
+            <!-- Biografia -->
+            <div>
+                <br>
+                <h4>Textarea</h4>
+                <hr>
+                <p>An area for entering text with multiple lines.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="bio"&gt;Text:&lt;/label&gt;</code><br>
+                <code>&lt;textarea name="bio" id="bio" cols="20" rows="10"&gt;&lt;/textarea&gt;</code>
+                <br>
+                <label for="bio"></label>
+                <textarea name="bio" id="bio" cols="12" rows="4" placeholder="Tell me something:"></textarea>
+            </div>
+
+            <!-- Select -->
+            <div>
+                <br>
+                <h4>Select Dropdown</h4>
+                <hr>
+                <p>Allows the selection of an option from a list.</p>
+                <p>Example Usage:</p>
+                <code>&lt;label for="select"&gt;Select:&lt;/label&gt;</code><br>
+                <code>&lt;select name="select" id="select"&gt;</code><br>
+                <code>&lt;option value="option1"&gt;</code>
+
+                <br>
+                <label for="select">Selecione:</label>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Selecione uma das opções</option>
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3">Opção 3</option>
+                </select>
+            </div>
+
+            <!-- Botões -->
+            <div>
+                <br>
+                <h4>Submit and Reset Buttons</h4>
+                <hr>
+                <p>Buttons to submit the form or clear the form fields.</p>
+                <p>Example Usage:</p>
+                <code>&lt;input type="submit" id="submit" name="submit" value="Submit"&gt;</code><br>
+                <code>&lt;input type="reset" id="reset" name="reset" value="Reset"&gt;</code>
+                <br>
+                <input type="submit" id="submit" name="submit" value="Enviar">
+                <input type="reset" id="limpar" name="limpar" value="Limpar">
+            </div>
         </section>
 
     </main>

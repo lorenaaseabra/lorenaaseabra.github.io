@@ -1,0 +1,17 @@
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.fa-3x {
+    font-size: 4em;
+}
+
+.ml-4 {
+    margin-left: 2em;
+}
+
+.smaller-input {
+    width: 50%;
+    margin-right: 10%
+}

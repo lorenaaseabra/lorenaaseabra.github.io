@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/html.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
@@ -15,7 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>DevDoodleHub | Html</title>
+    <script src="server.js"></script>
+
+    <title> DevDoodleHub | Html</title>
 </head>
 
 <body>
@@ -469,7 +473,7 @@
             <br>
         </section>
 
-        <section id="table">
+        <section id="table ">
             <h4>Tables</h4>
             <hr>
             <br>
@@ -481,13 +485,13 @@
                 way.
             </p>
             <br>
-            <div class="text-center">
-                <img src="assets/table.jpg" class="rounded" alt="..." width="750">
+            <div class="text-center ">
+                <img src="assets/table.jpg " class="rounded " alt="... " width="750 ">
             </div>
             <br>
 
 
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped ">
                 <thead>
                     <tr>
                         <th>Element</th>
@@ -530,231 +534,315 @@
         </section>
 
         <!-- Section formulario (the HTML code you provided) -->
-        <section id="formulario">
-            <h2>Forms</h2>
+        <section id="form ">
+            <h4>Forms</h4>
             <hr>
             <br>
-            <br>
 
+
+            <p>The <code>&lt;form&gt;</code> tag in HTML is used to create a form on a web page. Forms are a crucial part of user interactions on the web, allowing users to submit data to a server.</p>
+
+            <h5>Main Purposes and Functionalities:</h5>
+
+            <ol>
+                <li><strong>Data Collection:</strong> The primary function of an HTML form is to collect user data. This can include information such as text, numbers, option selections, checkboxes, radio buttons, among others.</li>
+
+                <li><strong>Submission to a Server:</strong> When a user fills out a form and submits it, the form data is typically sent to a web server for further processing. This is commonly done using the HTTP POST or GET method.</li>
+
+                <li><strong>HTTP Methods:</strong> The <code>&lt;form&gt;</code> tag includes the <code>method</code> attribute, which specifies the HTTP method to be used for sending the data. Common methods are:
+                    <ul>
+                        <li><strong>GET:</strong> Appends form data to the URL as query parameters. Usually used for forms that don't alter data on the server.</li>
+                        <li><strong>POST:</strong> Sends form data in the body of the HTTP request. Used for forms that may alter data on the server.</li>
+                    </ul>
+                </li>
+
+                <li><strong><code>action</code> Attribute:</strong> The <code>action</code> attribute specifies the URL to which the form data will be sent. It is the URL of the script on the server that will process the form data.</li>
+
+                <li><strong>Form Elements:</strong> The <code>&lt;form&gt;</code> tag wraps around various form elements such as <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code>, among others.
+                    Each of these elements is used to collect different types of data.</li>
+
+                <li><strong>Client-Side Validation:</strong> HTML5 introduced client-side validation features, allowing the specification of requirements such as required fields, data formats, etc. This can be done using attributes like <code>required</code>,
+                    <code>pattern</code>, <code>min</code>, <code>max</code>, etc.</li>
+
+                <li><strong>Logical Grouping:</strong> The <code>&lt;form&gt;</code> tag also allows logically grouping related form elements. For example, a login form may include fields like "username " and "password " within a single <code>&lt;form&gt;</code>                    tag.</li>
+            </ol>
+            <br>
+            <h5>Basic Example:</h5>
+
+            <pre>
+                                    <code>
+                                      &lt;form action="/process-form " method="post "&gt;
+                                        &lt;label for="name "&gt;Name:&lt;/label&gt;
+                                        &lt;input type="text " id="name " name="name " required&gt;
+                                
+                                        &lt;label for="email "&gt;Email:&lt;/label&gt;
+                                        &lt;input type="email " id="email " name="email " required&gt;
+                                
+                                        &lt;button type="submit "&gt;Submit&lt;/button&gt;
+                                      &lt;/form&gt;
+                                    </code>
+                                  </pre>
+
+            <br>
+            <p>
+                <h5><em>Here are some examples of the usage of forms in HTML file:</em></h5>
+            </p>
+            <br>
             <!-- Input de Texto -->
             <div>
-                <h4>Text Input</h4>
+                <h5>Text Input</h5>
                 <hr>
                 <p>A simple text box for user input.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="text"&gt;Name:&lt;/label&gt;</code><br>
-                <code>&lt;input type="text" id="text" name="name" placeholder="Enter your name"&gt;</code>
+                <code>&lt;label for="text "&gt;Name:&lt;/label&gt;</code><br>
+                <code>&lt;input type="text " id="text " name="name " placeholder="Enter your name "&gt;</code>
                 <br>
-                <label for="texto">Informe seu nome:</label>
-                <input type="text" id="texto" name="nome" placeholder="Digite seu nome">
+                <label for="texto ">Informe seu nome:</label>
+                <input type="text " id="texto " name="nome " placeholder="Digite seu nome ">
             </div>
 
             <!-- Senha -->
             <div>
                 <br>
-                <h4>Password</h4>
+                <h5>Password</h5>
                 <hr>
                 <p>A text box where typed characters are masked for password input.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="password"&gt;Password:&lt;/label&gt;</code><br>
-                <code>&lt;input type="password" id="password" name="password" &gt;</code>
+                <code>&lt;label for="password "&gt;Password:&lt;/label&gt;</code><br>
+                <code>&lt;input type="password " id="password " name="password " &gt;</code>
                 <br>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
+                <label for="senha ">Senha:</label>
+                <input type="password " id="senha " name="senha ">
             </div>
 
             <!-- Email -->
             <div>
                 <br>
-                <h4>Email</h4>
+                <h5>Email</h5>
                 <hr>
                 <p>Used for entering an email address.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="email"&gt;Email:&lt;/label&gt;</code><br>
-                <code> &lt;input type="email" id="email" name="email"&gt;</code>
+                <code>&lt;label for="email "&gt;Email:&lt;/label&gt;</code><br>
+                <code> &lt;input type="email " id="email " name="email "&gt;</code>
                 <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <label for="email ">Email:</label>
+                <input type="email " id="email " name="email ">
             </div>
 
             <!-- Data -->
             <div>
                 <br>
-                <h4>Date</h4>
+                <h5>Date</h5>
                 <hr>
                 <p>Provides a field for selecting a date.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="date"&gt;Date:&lt;/label&gt;</code><br>
-                <code>&lt;input type="date" id="date" name="date"&gt;</code>
+                <code>&lt;label for="date "&gt;Date:&lt;/label&gt;</code><br>
+                <code>&lt;input type="date " id="date " name="date "&gt;</code>
                 <br>
-                <label for="data">Data:</label>
-                <input type="date" id="data" name="data">
+                <label for="data ">Data:</label>
+                <input type="date " id="data " name="data ">
             </div>
 
             <!-- Hora -->
             <div>
                 <br>
-                <h4>Time</h4>
+                <h5>Time</h5>
                 <hr>
                 <p>Allows the insertion of a time.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="time"&gt;Time:&lt;/label&gt;</code><br>
-                <code>&lt;input type="time" id="time" name="time"&gt;</code>
+                <code>&lt;label for="time "&gt;Time:&lt;/label&gt;</code><br>
+                <code>&lt;input type="time " id="time " name="time "&gt;</code>
                 <br>
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora">
+                <label for="hora ">Hora:</label>
+                <input type="time " id="hora " name="hora ">
             </div>
 
             <!-- Número -->
             <div>
                 <br>
-                <h4>Number</h4>
+                <h5>Number</h5>
                 <hr>
                 <p>Used for entering a numeric value.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="number"&gt;Number:&lt;/label&gt;</code><br>
-                <code>&lt;input type="number" id="number" name="number"&gt;</code>
+                <code>&lt;label for="number "&gt;Number:&lt;/label&gt;</code><br>
+                <code>&lt;input type="number " id="number " name="number "&gt;</code>
                 <br>
-                <label for="qualquer">Número:</label>
-                <input type="number" id="qualquer" name="qualquer">
+                <label for="qualquer ">Número:</label>
+                <input type="number " id="qualquer " name="qualquer ">
             </div>
 
             <!-- Arquivo -->
             <div>
                 <br>
-                <h4>File</h4>
+                <h5>File</h5>
                 <hr>
                 <p>Allows the user to upload files.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="file"&gt;File:&lt;/label&gt;</code><br>
-                <code>&lt;input type="file" id="file" name="file"&gt;</code>
+                <code>&lt;label for="file "&gt;File:&lt;/label&gt;</code><br>
+                <code>&lt;input type="file " id="file " name="file "&gt;</code>
                 <br>
-                <label for="arquivo">Arquivo:</label>
-                <input type="file" id="arquivo" name="arquivo">
+                <label for="arquivo ">Arquivo:</label>
+                <input type="file " id="arquivo " name="arquivo ">
             </div>
 
             <!-- Link -->
             <div>
                 <br>
-                <h4>URL</h4>
+                <h5>URL</h5>
                 <hr>
                 <p>Used for entering a URL.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="url"&gt;URL:&lt;/label&gt;</code><br>
-                <code>&lt;input type="url" id="url" name="url"&gt;</code>
+                <code>&lt;label for="url "&gt;URL:&lt;/label&gt;</code><br>
+                <code>&lt;input type="url " id="url " name="url "&gt;</code>
                 <br>
-                <label for="link">Link:</label>
-                <input type="url" id="link" name="link">
+                <label for="link ">Link:</label>
+                <input type="url " id="link " name="link ">
             </div>
 
             <!-- Cor -->
             <div>
                 <br>
-                <h4>Color</h4>
+                <h5>Color</h5>
                 <hr>
                 <p>Provides a color picker.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="color"&gt;Color:&lt;/label&gt;</code><br>
-                <code>&lt;input type="color" id="color" name="color"&gt;</code>
+                <code>&lt;label for="color "&gt;Color:&lt;/label&gt;</code><br>
+                <code>&lt;input type="color " id="color " name="color "&gt;</code>
                 <br>
-                <label for="cor">Cor:</label>
-                <input type="color" id="cor" name="cor">
+                <label for="cor ">Cor:</label>
+                <input type="color " id="cor " name="cor ">
             </div>
 
             <!-- Range -->
             <div>
                 <br>
-                <h4>Range</h4>
+                <h5>Range</h5>
                 <hr>
                 <p>Offers a slider to select a value from a range.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="range"&gt;Range:&lt;/label&gt;</code><br>
-                <code>&lt;input type="range" id="range" name="range"&gt;</code>
+                <code>&lt;label for="range "&gt;Range:&lt;/label&gt;</code><br>
+                <code>&lt;input type="range " id="range " name="range "&gt;</code>
                 <br>
-                <label for="range">Range:</label>
-                <input type="range" id="range" name="range">
+                <label for="range ">Range:</label>
+                <input type="range " id="range " name="range ">
             </div>
 
             <!-- Checkbox -->
             <div>
                 <br>
-                <h4>Checkbox</h4>
+                <h5>Checkbox</h5>
                 <hr>
                 <p>A checkbox for selecting options.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="checkbox"&gt;Check:&lt;/label&gt;</code><br>
-                <code>&lt;input type="checkbox" id="checkbox" name="checkbox"&gt;</code>
+                <code>&lt;label for="checkbox "&gt;Check:&lt;/label&gt;</code><br>
+                <code>&lt;input type="checkbox " id="checkbox " name="checkbox "&gt;</code>
                 <br>
-                <label for="check">Marcar:</label>
-                <input type="checkbox" id="check" name="check">
+                <label for="check ">Marcar:</label>
+                <input type="checkbox " id="check " name="check ">
             </div>
 
             <!-- Radio -->
             <div>
                 <br>
-                <h4>Radio Buttons</h4>
+                <h5>Radio Buttons</h5>
                 <hr>
                 <p>Provides a list of options where only one can be selected.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="radio"&gt;Select:&lt;/label&gt;</code><br>
-                <code>&lt;input type="radio" id="radio" name="radio"&gt;</code>
+                <code>&lt;label for="radio "&gt;Select:&lt;/label&gt;</code><br>
+                <code>&lt;input type="radio " id="radio " name="radio "&gt;</code>
                 <br>
-                <label for="radio">Selecionar:</label>
-                <input type="radio" id="radio" name="radio">
+                <label for="radio ">Selecionar:</label>
+                <input type="radio " id="radio " name="radio ">
             </div>
 
             <!-- Biografia -->
             <div>
                 <br>
-                <h4>Textarea</h4>
+                <h5>Textarea</h5>
                 <hr>
                 <p>An area for entering text with multiple lines.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="bio"&gt;Text:&lt;/label&gt;</code><br>
-                <code>&lt;textarea name="bio" id="bio" cols="20" rows="10"&gt;&lt;/textarea&gt;</code>
+                <code>&lt;label for="bio "&gt;Text:&lt;/label&gt;</code><br>
+                <code>&lt;textarea name="bio " id="bio " cols="20 " rows="10 "&gt;&lt;/textarea&gt;</code>
                 <br>
-                <label for="bio"></label>
-                <textarea name="bio" id="bio" cols="12" rows="4" placeholder="Tell me something:"></textarea>
+                <label for="bio "></label>
+                <textarea name="bio " id="bio " cols="12 " rows="4 " placeholder="Tell me something: "></textarea>
             </div>
 
             <!-- Select -->
             <div>
                 <br>
-                <h4>Select Dropdown</h4>
+                <h5>Select Dropdown</h5>
                 <hr>
                 <p>Allows the selection of an option from a list.</p>
                 <p>Example Usage:</p>
-                <code>&lt;label for="select"&gt;Select:&lt;/label&gt;</code><br>
-                <code>&lt;select name="select" id="select"&gt;</code><br>
-                <code>&lt;option value="option1"&gt;</code>
+                <code>&lt;label for="select "&gt;Select:&lt;/label&gt;</code><br>
+                <code>&lt;select name="select " id="select "&gt;</code><br>
+                <code>&lt;option value="option1 "&gt;</code>
 
                 <br>
-                <label for="select">Selecione:</label>
-                <select name="select" id="select">
-                    <option value="" disabled selected>Selecione uma das opções</option>
-                    <option value="opcao1">Opção 1</option>
-                    <option value="opcao2">Opção 2</option>
-                    <option value="opcao3">Opção 3</option>
-                </select>
+                <label for="select ">Selecione:</label>
+                <select name="select " id="select ">
+                                    <option value=" " disabled selected>Selecione uma das opções</option>
+                                    <option value="opcao1 ">Opção 1</option>
+                                    <option value="opcao2 ">Opção 2</option>
+                                    <option value="opcao3 ">Opção 3</option>
+                                </select>
             </div>
 
             <!-- Botões -->
             <div>
                 <br>
-                <h4>Submit and Reset Buttons</h4>
+                <h5>Submit and Reset Buttons</h5>
                 <hr>
                 <p>Buttons to submit the form or clear the form fields.</p>
                 <p>Example Usage:</p>
-                <code>&lt;input type="submit" id="submit" name="submit" value="Submit"&gt;</code><br>
-                <code>&lt;input type="reset" id="reset" name="reset" value="Reset"&gt;</code>
+                <code>&lt;input type="submit " id="submit " name="submit " value="Submit "&gt;</code><br>
+                <code>&lt;input type="reset " id="reset " name="reset " value="Reset "&gt;</code>
                 <br>
-                <input type="submit" id="submit" name="submit" value="Enviar">
-                <input type="reset" id="limpar" name="limpar" value="Limpar">
+                <input type="submit " id="submit " name="submit " value="Enviar ">
+                <input type="reset " id="limpar " name="limpar " value="Limpar ">
             </div>
         </section>
+        <br>
+        <br>
 
     </main>
 
 </body>
+
+<footer class="bg-dark text-light py-5 ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-6 ">
+                <h5>Contact Me</h5>
+                <form id="contactForm ">
+                    <div class="form-group ">
+                        <label for="email ">Your Email:</label>
+                        <input type="email " class="form-control smaller-input " id="email " name="email " required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="message ">Your Message:</label>
+                        <textarea class="form-control smaller-input " id="message " name="message " rows="2 " required></textarea>
+                    </div>
+                    <button type="submit " class="btn btn-primary ">Send Email</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 ">
+                <h5>Connect with Me</h5>
+                <div class="d-flex ">
+                    <a href="https://github.com/lorenaaseabra " target="_blank " rel="noopener noreferrer " class="text-light mr-4 ">
+                        <i class="fab fa-github fa-3x "></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/seabralorena/ " target="_blank " rel="noopener noreferrer " class="text-light ml-4 ">
+                        <i class="fab fa-linkedin fa-3x "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 </html>

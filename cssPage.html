@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/CSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link href="assets/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="server.js"></script>
+    <title>DevDoodleHub | CSS</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar --bs-body-bg-rgb bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="main.html">DevDoodleHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="htmlPage.html">Html</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cssPage.html">CSS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Others
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#">React</a></li>
+                                <li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Angular</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Owner info</a></li>
+                            </ul>
+                            </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="background-color"></div>
+
+    </header>
+
+    <main class="main">
+        <div class="collapse bd-toc-collapse" id="tocContents">
+            <nav id="tableOfContent">
+                <p>On this page</p>
+                <ul>
+                    <li>
+                        <a href="#introduction" id>Welcome
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#basic" id>CSS Basics</a>
+                        <ul>
+
+                            <li>
+                                <a href="#selector" id>Selector</a>
+                            </li>
+                            <li>
+                                <a href="#property" id>Value and Property</a>
+                            </li>
+                            <li>
+                                <a href="#Methods" id>Methods to include CSS in HTML</a>
+                                <ul>
+                                    <li>
+                                        <a href="#embedded" id>Embedded</a>
+                                    </li>
+                                    <li>
+                                        <a href="#external" id>External</a>
+                                    </li>
+                                    <li>
+                                        <a href="#inline" id>Inline</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#color" id>Colors</a>
+                    </li>
+                    <li>
+                        <a href="#background" id>Background</a>
+                    </li>
+                    <li>
+                        <a href="#typography" id>Typography</a>
+                    </li>
+                    <li>
+                        <a href="#box" id>Box model</a>
+                        <ul>
+                            <li>
+                                <a href="#content" id>Content</a>
+                            </li>
+                            <li>
+                                <a href="#paddding" id>Padding</a>
+                            </li>
+                            <li>
+                                <a href="#border" id>Border</a>
+                            </li>
+                            <li>
+                                <a href="#margin" id>Margin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+
+        <section id="introduction">
+            <h2>Welcome to CSS!</h2>
+            <p>
+                CSS, or Cascading Style Sheets, plays a crucial role in web development by providing a means to style and format HTML pages. HTML (Hypertext Markup Language) is primarily responsible for structuring the content of a web page, defining elements such as
+                headings, paragraphs, links, and images. However, HTML alone does not determine the visual appearance or layout of these elements.
+            </p>
+
+            <p>
+                This is where CSS comes in. CSS acts as a styling language that allows developers to control the presentation of HTML elements on a webpage. Its main functions include:
+            </p>
+
+            <ol>
+                <li><strong>Styling Elements:</strong> CSS enables developers to define the visual style of HTML elements, such as setting colors, fonts, margins, padding, and borders. This allows for a consistent and visually appealing presentation of content.</li>
+
+                <li><strong>Layout Control:</strong> CSS allows developers to control the layout and positioning of elements on a page. This includes adjusting the size and positioning of containers, creating responsive designs for different screen sizes,
+                    and controlling the arrangement of elements in relation to each other.</li>
+
+                <li><strong>Responsive Design:</strong> With CSS, web developers can implement responsive design principles, ensuring that web pages adapt to different screen sizes and devices. This is achieved through techniques like media queries and flexible
+                    grid systems.</li>
+
+                <li><strong>Consistency Across Pages:</strong> CSS facilitates the creation of consistent styles across multiple pages of a website. By defining styles in external CSS files, developers can apply the same styles to multiple HTML pages, promoting
+                    a unified and professional look.</li>
+
+                <li><strong>Animation and Interaction:</strong> CSS allows for the creation of animations and interactive features on web pages. Developers can use CSS transitions and animations to add movement and dynamic effects to elements, enhancing the
+                    user experience.</li>
+            </ol>
+
+        </section>
+        <br>
+        <br>
+
+        <section id="tag_geral">
+
+            <h4 id="basic">Basic CSS Syntax</h4>
+            <hr>
+            <br>
+
+            <p>
+                In CSS, a basic rule consists of a <code>selector</code>, <code>property</code>, and <code>value</code>. It follows the syntax:
+            </p>
+            <pre><code>
+                selector {
+                    property: value;
+                }
+            </code></pre>
+
+            <p>
+                A <code>selector</code> targets HTML elements, a <code>property</code> specifies what aspect to style, and a <code>value</code> defines the specific style details. Let's explore examples for each:
+            </p>
+            <br>
+            <h5 id="selector">1. Selector:</h5>
+            <p>
+                Target all <code>&lt;h1&gt;</code> elements:
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                h1 {
+                    color: blue;
+                }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5 id="property">2. Property and Value:</h5>
+            <p>
+                Style all paragraphs with class 'content':
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .content {
+                        font-family: 'Arial', sans-serif;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h4 id="Methods">Methods to Include CSS in HTML:</h4>
+            <hr>
+
+            <h5 id="embedded"><strong>1. Embedded (Tag &lt;style&gt;):</strong></h5>
+            <p>
+                You can include CSS directly within your HTML using the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.
+            </p>
+            <pre><code>
+                &lt;head&gt;
+                    &lt;style&gt;
+                    
+                        selector {
+                            property: value;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+            </code></pre>
+            <br>
+            <h5 id="external"><strong>2. External (Separate File):</strong></h5>
+            <p>
+                Create an external CSS file (e.g., <code>styles.css</code>) and link it to your HTML using the <code>&lt;link&gt;</code> tag.
+            </p>
+            <pre><code>
+                &lt;head&gt;
+                    &lt;link rel="stylesheet " href="styles.css "&gt;
+                &lt;/head&gt;
+            </code></pre>
+            <br>
+            <h5 id="inline"><strong>3. Inline (Using the style Attribute):</strong></h5>
+            <p>
+                Apply styles directly to an HTML element using the <code>style</code> attribute.
+            </p>
+            <pre><code>
+                &lt;div style="property: value; "&gt;
+                    Content goes here.
+                &lt;/div&gt;
+            </code></pre>
+
+
+        </section>
+
+        <!-- Section tag_format (the HTML code you provided) -->
+        <section id="tag_color">
+            <h4 id="color">Colors and Background</h4>
+            <hr>
+            <br>
+
+            <h4>Defining Colors:</h4>
+
+            <p>
+                In CSS, colors can be defined in various ways:
+            </p>
+
+            <h5><strong>1. By Name:</strong></h5>
+            <p>
+                Colors can be specified by name, such as "red", "blue", or "green".
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .named-color {
+                        color: red;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>2. Hexadecimal Code (#RRGGBB):</strong></h5>
+            <p>
+                Colors can be represented using hexadecimal codes, where RR, GG, and BB are two-digit hexadecimal values for red, green, and blue respectively.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .hex-color {
+                        color: #3498db;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>3. RGB (Red, Green, Blue):</strong></h5>
+            <p>
+                Colors can also be defined using RGB values, specifying the intensity of red, green, and blue in a range from 0 to 255.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .rgb-color {
+                        color: rgb(83, 219, 52);
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <div class="color-examples">
+                <p>
+                    <em>Examples:</em>
+                </p>
+                <div class="named-color">This is a named color (red).</div>
+                <div class="hex-color">This is a hex color (#3498db).</div>
+                <div class="rgb-color">This is an RGB color (rgb(83, 219, 52)).</div>
+            </div>
+            <br>
+            <h4 id="background">Adding Backgrounds with the <code>background</code> Property:</h4>
+            <hr>
+            <br>
+
+            <p>
+                The <code>background</code> property in CSS is used to set various background properties of an element. Examples include setting background color, background image, and gradients.
+            </p>
+
+            <h5><strong>1. Background Color:</strong></h5>
+            <p>
+                You can set the background color of an element using the <code>background-color</code> property.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .background-example-1 {
+                        background-color: #3498db;
+                        color: white; 
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>2. Background Gradient:</strong></h5>
+            <p>
+                Create a gradient background using the <code>linear-gradient</code> function.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .background-example-2 {
+                        background: linear-gradient(to right, #ff7e5f, #feb47b);
+                        color: white; /* Ensure text is readable on the gradient background */
+                    }
+                &lt;/style&gt;
+            </code></pre>
+
+            <div class="background-examples background-example-1">This is an example with a solid background color.</div>
+            <div class="background-examples background-example-2">This is an example with a gradient background.</div>
+            <br>
+
+
+        </section>
+        <section id="tag-typography ">
+            <h4 id="typography">Typography</h4>
+            <hr>
+            <br>
+
+            <p>
+                In CSS, typography styles can be defined using various properties:
+            </p>
+
+            <h5><strong>1. Font Family:</strong></h5>
+            <p>
+                Set the font family for an element using the <code>font-family</code> property. It defines the typeface or font of the text.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .typography-example-1 {
+                        font-family: 'Times New Roman', serif;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>2. Font Size:</strong></h5>
+            <p>
+                Define the font size using the <code>font-size</code> property. It determines the size of the text.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .typography-example-1 {
+                        font-size: 18px;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>3. Line Height:</strong></h5>
+            <p>
+                Adjust the line height with the <code>line-height</code> property. It specifies the height of a line of text.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .typography-example-1 {
+                        line-height: 1.4;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>4. Letter Spacing:</strong></h5>
+            <p>
+                Set the letter spacing using the <code>letter-spacing</code> property. It controls the space between characters.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .typography-example-1 {
+                        letter-spacing: 1px;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5><strong>5. Text Color:</strong></h5>
+            <p>
+                Specify the color of the text with the <code>color</code> property.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .typography-example-1 {
+                        color: #333;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <div class="typography-examples">
+                <p>
+                    <em>Examples:</em>
+                </p>
+                <div class="typography-example-1">
+                    This is an example with custom font, size, line height, letter spacing, and text color.
+                </div>
+                <div class="typography-example-2">
+                    This is another example with different typography styles.
+                </div>
+            </div>
+            <br>
+            <h4>Importance of Choosing Readable Fonts</h4>
+            <hr>
+
+            <p>
+                The choice of fonts significantly impacts readability. It is essential to choose fonts that are easy to read, especially for longer passages of text. Fonts like Arial, Verdana, and Times New Roman are commonly used for their readability on screens and
+                in print. Avoid overly decorative or complex fonts for body text, as they may hinder readability. Save more decorative fonts for headers or special emphasis.
+            </p>
+
+        </section>
+
+        <br>
+        <br>
+        <section id="box-model ">
+            <h4 id="box">Box Model</h4>
+            <hr>
+            <br>
+            <h4>Concepts of Content, Padding, Border, and Margin:</h4>
+
+            <p>
+                In CSS, each HTML element is considered a box, and the box model describes how these boxes are structured. The key components of the box model are:
+            </p>
+            <br>
+            <h5 id="content"><strong>1. Content:</strong></h5>
+            <p>
+                The actual content of the box, which can include text, images, or other elements. The size of the content area is defined by the <code>width</code> and <code>height</code> properties.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    .box-example {
+                        width: 200px;
+                        height: 100px;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5 id="padding"><strong>2. Padding:</strong></h5>
+            <p>
+                The space between the content and the border. It is defined by the <code>padding</code> property.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+            
+                    .box-example {
+                        padding: 20px;
+                    }
+                 &lt;/style&gt;
+            </code></pre>
+            <br>
+            <h5 id="border"><strong>3. Border:</strong></h5>
+            <p>
+                The border surrounding the padding. It is defined by the <code>border</code> property.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+            
+                    .box-example {
+                        border: 5px solid #2c3e50;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+
+            <h5 id="margin"><strong>4. Margin:</strong></h5>
+            <p>
+                The space outside the border, creating a gap between this box and other elements. It is defined by the <code>margin</code> property.
+            </p>
+            <pre><code>
+                &lt;style&gt;
+            
+                    .box-example {
+                        margin: 10px;
+                    }
+                &lt;/style&gt;
+            </code></pre>
+            <br>
+            <img src="assets/box-model.png" class="rounded" alt="..." width="350" ">
+            <div class="box-model-examples ">
+                <p>
+                    Example:
+                </p>
+                <div class="box-example ">
+                    This is an example box with content, padding, border, and margin.
+                </div>
+            </div>
+            <br>
+            <h5>Box Model Impact on Element Size:</h5>
+            <hr>
+
+            <p>
+                The box model affects the total size of an element on a page. The total size of the box is the sum of the content area, padding, border, and margin. In the example above, the width of the box is calculated as follows:
+            </p>
+            <pre><code>
+                &lt;style&gt;
+                    /* Example calculating total width */
+                    .box-example {
+                        /* Width of content area */
+                        width: 200px;
+                
+                        /* Padding on both sides */
+                        padding: 20px;
+                
+                        /* Border on both sides */
+                        border: 5px solid #2c3e50;
+                
+                        /* Margin on both sides */
+                        margin: 10px;
+                
+                        /* Total width calculation: */
+                        /* 200px (content) + 2 * 20px (padding) + 2 * 5px (border) + 2 * 10px (margin) = 270px */
+                    }
+
+                &lt;/style&gt;
+
+            </code></pre>
+            <br>
+            <br>
+        </section>
+        </main>
+    </body>
+
+    
+
+    <footer class="bg-dark text-light py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <h5>Contact Me</h5>
+                    <form id="contactForm ">
+                        <div class="form-group ">
+                            <label for="email ">Your Email:</label>
+                            <input type="email " class="form-control smaller-input " id="email " name="email " required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="message ">Your Message:</label>
+                            <textarea class="form-control smaller-input " id="message " name="message " rows="2 " required></textarea>
+                        </div>
+                        <button type="submit " class="btn btn-primary ">Send Email</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <h5>Connect with Me</h5>
+                    <div class="d-flex ">
+                        <a href="https://github.com/lorenaaseabra " target="_blank " rel="noopener noreferrer " class="text-light mr-4 ">
+                            <i class="fab fa-github fa-3x "></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/seabralorena/ " target="_blank " rel="noopener noreferrer " class="text-light ml-4 ">
+                            <i class="fab fa-linkedin fa-3x "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</html>

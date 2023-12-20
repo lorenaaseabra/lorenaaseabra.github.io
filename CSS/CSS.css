@@ -131,3 +131,104 @@
     color: white;
     text-align: center;
 }
+
+#container {
+    position: relative;
+    /* Set position to relative */
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+div.static {
+    position: relative;
+}
+
+div.static-scroll {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow-x: scroll;
+}
+
+div.static-div {
+    position: static;
+    top: 20px;
+    left: 20px;
+    border: 3px solid red;
+}
+
+div.relative {
+    top: 20px;
+    left: 20px;
+}
+
+div.relative-scroll {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow-x: scroll;
+}
+
+div.relative-div {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border: 3px solid red;
+}
+
+div.absolut {
+    position: relative;
+}
+
+div.absolut-scroll {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow-x: scroll;
+}
+
+div.absolut-div {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 3px solid red;
+    background-color: red;
+}
+
+div.fixed {
+    position: relative;
+}
+
+div.fixed-scroll {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow-x: scroll;
+}
+
+div.fixed-div {
+    position: fixed;
+    border: 3px solid red;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+.z-index-example {
+    position: relative;
+    overflow-x: scroll;
+}
+
+.box1 {
+    background-color: #ffcccb;
+    z-index: 2;
+}
+
+.box2 {
+    background-color: #b3e0ff;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

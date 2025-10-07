@@ -38,26 +38,26 @@ It’s designed with a **clean and responsive interface**, offering an elegant w
 ```
 ## Getting Started
 
-# Clone this repository
+### Clone this repository
 ```
 git clone https://github.com/lorenaaseabra/lorenaaseabra.github.io.git
 ```
-# Navigate into the folder
+### Navigate into the folder
 ```
 cd lorenaaseabra.github.io
 ```
-# Install dependencies
+### Install dependencies
 ```
 npm install
 ```
 
-# Start the development server
+### Start the development server
 ```
 npm run dev
 ```
 Then open http://localhost:5173 in your browser.
 
-##Features
+## Features
 
 - Responsive design — optimized for desktop, tablet, and mobile
 - Clean and modern UI — with a navy blue, white, and grey palette
